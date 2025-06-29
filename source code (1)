@@ -1,0 +1,43 @@
+
+let studentName = "Piyush Kumar";
+let subject1 = 85; 
+let subject2 = 78; 
+let subject3 = 92;  
+let subject4 = 65;  
+let subject5 = 74;  
+
+let totalMarks = subject1 + subject2 + subject3 + subject4 + subject5;
+let average = totalMarks / 5;
+
+console.log("----- Student Report Card -----");
+console.log("Name: " + studentName);
+console.log("Math: " + subject1);
+console.log("Science: " + subject2);
+console.log("English: " + subject3);
+console.log("History: " + subject4);
+console.log("Geography: " + subject5);
+console.log("Total Marks: " + totalMarks + "/500");
+console.log("Average Marks: " + average);
+
+let grade;
+
+if (average >= 90) {
+  grade = "A+";
+} else if (average >= 80) {
+  grade = "A";
+} else if (average >= 70) {
+  grade = "B";
+} else if (average >= 60) {
+  grade = "C";
+} else if (average >= 50) {
+  grade = "D";
+} else {
+  grade = "F";
+}
+console.log("Grade: " + grade);
+if (subject1 >= 33 && subject2 >= 33 && subject3 >= 33 && subject4 >= 33 && subject5 >= 33) {
+  console.log("Result: Pass");
+} else {
+  console.log("Result: Fail");
+}
+console.log("------------------------------");
